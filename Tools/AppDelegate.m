@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 
+#import "CYTools.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [CYTools monitorNetWorking];
     return YES;
 }
 
